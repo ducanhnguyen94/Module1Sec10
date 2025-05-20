@@ -7,7 +7,7 @@ yes.addEventListener('click', () => {
 })
 
 no.addEventListener('mouseover', () => {
-    no.style.position = 'fixed';
+    no.style.position = 'absolute';
     no.style.left = window.innerWidth * Math.random() + 'px';
     no.style.top = window.innerHeight * Math.random() + 'px';
 })
