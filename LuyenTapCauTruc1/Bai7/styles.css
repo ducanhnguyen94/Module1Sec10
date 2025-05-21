@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#price {
+    color: red;
+}
+
+#data, #inline, #outline {
+    color: green;
+}
+
+#payment {
+    color: blue;
+}

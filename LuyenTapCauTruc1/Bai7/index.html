@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="soLuong">
+        <select name="goiCuoc" id="line">
+            <option value="50">CF50</option>
+            <option value="90">CF90</option>
+            <option value="120">CF120</option>
+        </select>
+        <select name="amount" id="amount">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </div>
+    <div id="thongTin">
+        <table>
+            <tr>
+                <th>Hạn Dùng</th>
+                <th>Giá Cước</th>
+                <th>Ưu đãi</th>
+                <th>Tổng thanh toán / tháng</th>
+            </tr>
+            <tr>
+                <td id="limit">0</td>
+                <td id="price">0</td>
+                <td id="info">
+                    <p>Duong luong:</p><span id="data">0</span>
+                    <p>Goi noi mang:</p><span id="inline">0</span>
+                    <p>Goi ngoai mang:</p><span id="outline">0</span>
+                </td>
+                <td id="payment">0</td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
