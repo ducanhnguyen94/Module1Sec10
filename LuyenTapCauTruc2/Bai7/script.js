@@ -8,12 +8,12 @@ const result = document.getElementById('result');
 btn.addEventListener('click', () => {
     
     if (math.value === '+') {
-        return result.innerHTML = (Number(equal.value) - Number(b.value)) / a.value;
+        return result.innerHTML = Math.sqrt((Number(equal.value) - Number(b.value)) / a.value);
     } else if (math.value === '-') {
-        return result.innerHTML = (Number(equal.value) + Number(b.value)) / a.value;
+        return result.innerHTML = Math.sqrt((Number(equal.value) + Number(b.value)) / a.value);
     } else if (math.value === '*') {
-        return result.innerHTML = (Number(equal.value) / Number(b.value)) / a.value;
+        return result.innerHTML = Math.sqrt((Number(equal.value) / Number(b.value)) / a.value);
     } else if (math.value === '/') {
-        return result.innerHTML = (Number(equal.value) * Number(b.value)) / a.value;
+        return result.innerHTML = Math.sqrt((Number(equal.value) * Number(b.value)) / a.value);
     } 
 });
