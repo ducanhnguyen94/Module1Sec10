@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span>Nhap met: </span><input type="number" id="meter">
+    <button id="button">Tinh</button>
+    <span>Feet: </span><span id="feet"></span>
+</body>
+
+<script>
+    const meter = document.getElementById('meter');
+    const feet = document.getElementById('feet')
+    const btn = document.getElementById('button');
+    btn.addEventListener('click', () => {
+        if (meter.value === '' || meter.value < 0) {
+            feet.innerHTML = 'Nhap so thich hop';
+        } else {
+            let a = Number(meter.value) * 3.2808;
+            feet.innerHTML = a;
+        }
+    })
+</script>
+
+</html>

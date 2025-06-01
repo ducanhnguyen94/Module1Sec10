@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span>Nhap do C: </span><input type="number" id="celcius">
+    <button id="button">Tinh</button>
+    <span>Do F: </span><span id="fahrenheit"></span>
+</body>
+
+<script>
+    const cel = document.getElementById('celcius');
+    const fah = document.getElementById('fahrenheit')
+    const btn = document.getElementById('button');
+    btn.addEventListener('click', () => {
+        if (cel.value === '') {
+            fah.innerHTML = 'Nhap so thich hop';
+        } else {
+            let a = Number(cel.value) * 9 / 5 + 32;
+            fah.innerHTML = a;
+        }
+    })
+</script>
+
+</html>
